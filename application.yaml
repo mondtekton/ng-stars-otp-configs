@@ -1,7 +1,16 @@
 # ============== Application configuration ==================== #
 spring:
-  application:
-    name: otp-service
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: katohdavid@gmail.com
+    password: fxzyuynzfnfvqoqo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
   datasource: # Database configuration #
     url: jdbc:mysql://localhost:3306/otp_db?useSSL=false&serverTimezone=UTC
     username: root
@@ -14,10 +23,6 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-
-# ============== Server configuration ==================== #
-server:
-  port: 8081
 
 # ============== Eureka Discovery configuration ==================== #
 eureka:
