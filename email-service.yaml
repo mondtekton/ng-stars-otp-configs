@@ -1,9 +1,21 @@
-# ============ SERVER CONFIGURATION =============
-server:
-  port: 8082
+# ============ Spring CONFIGURATION =============
+spring:
+  application:
+    name: email-service
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: katohdavid@gmail.com
+    password: fxzyuynzfnfvqoqo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 # ============== Eureka Discovery configuration ==================== #
 eureka:
   client:
     serverUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:9293/eureka/
