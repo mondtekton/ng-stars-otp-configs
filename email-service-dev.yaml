@@ -17,3 +17,5 @@ eureka:
   client:
     serverUrl:
       defaultZone: http://localhost:9293/eureka/
+
+email: Email service has started in development environment
