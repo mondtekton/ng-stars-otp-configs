@@ -16,7 +16,7 @@ spring:
 # ============== Eureka Discovery configuration ==================== #
 eureka:
   client:
-    serverUrl:
+    serviceUrl:
       defaultZone: http://localhost:9293/eureka/
 
 # ============== OTP configurations ====================
