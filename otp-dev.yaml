@@ -25,6 +25,3 @@ otp:
   charset: "0123456789"
   expiry-min: 10
   max-attempts: 5
-
-server:
-  port: 8082
