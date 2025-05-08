@@ -1,3 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: otp
+          uri: lb://otp
+          predicates:
+            - Path=/otp/**
+        - id: email
+          uri: lb://email
+          predicates:
+            - Path=/email/**
+
 eureka:
   client:
     serviceUrl:
