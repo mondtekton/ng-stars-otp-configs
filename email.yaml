@@ -12,6 +12,9 @@ spring:
           starttls:
             enable: true
 
+email:
+  sender: katohdavid@gmail.com
+
 # ============== Eureka Discovery configuration ==================== #
 eureka:
   client:
