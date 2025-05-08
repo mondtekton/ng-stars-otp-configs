@@ -15,6 +15,9 @@ spring:
 # ============== Eureka Discovery configuration ==================== #
 eureka:
   client:
-    serverUrl:
+    fetch-registry: true
+    serviceUrl:
       defaultZone: http://localhost:9293/eureka/
-
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
