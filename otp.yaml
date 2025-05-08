@@ -1,0 +1,27 @@
+# ============== Application configuration ==================== #
+spring:
+  datasource: # Database configuration #
+    url: jdbc:mysql://localhost:3306/otp_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 38NG/db@tro38
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+# ============== Eureka Discovery configuration ==================== #
+eureka:
+  client:
+    serverUrl:
+      defaultZone: http://localhost:9293/eureka/
+
+# ============== OTP configurations ====================
+otp:
+  length: 6
+  charset: "0123456789"
+  expiry-min: 10
+  max-attempts: 5
