@@ -16,6 +16,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9093/eureka/
+      defaultZone: http://localhost:9293/eureka/
 
 env: Dev Environment. All configuration here are meant for development.
