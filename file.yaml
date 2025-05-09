@@ -5,6 +5,4 @@ spring:
       max-request-size: 500MB
 
 file:
-  env: File service in production environment.
-  upload-dir: ${file.env}
-
+  upload-dir: ${user.home}
