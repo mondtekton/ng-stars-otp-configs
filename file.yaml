@@ -5,4 +5,4 @@ spring:
       max-request-size: 500MB
 
 file:
-  upload-dir: ${user.home}
+  upload-dir: ${user.home}/FileStorage

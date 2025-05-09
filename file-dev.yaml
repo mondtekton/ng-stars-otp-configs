@@ -6,4 +6,4 @@ spring:
 
 file:
   env: File service in development environment.
-  upload-dir: ${user.home}
+  upload-dir: ${user.home}/FileStorage
