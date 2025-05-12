@@ -16,6 +16,14 @@ spring:
       max-file-size: 50MB
       max-request-size: 50MB
 
-file:
-  env: File service in development environment.
-  upload-dir: ${user.home}/FileStorage
+app:
+  file:
+    storage-root: ${user.home}/FileStorage
+    max-file-size: 100MB
+    allowed-content-types:
+      - application/pdf
+      - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      - video/mp4
+      - video/x-msvideo # Microsoft video (.avi)
+      - video/x-quicktime # Apple video (.mov)
