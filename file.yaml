@@ -26,4 +26,4 @@ app:
       - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
       - video/mp4
       - video/x-msvideo # Microsoft video (.avi)
-      - video/x-quicktime # Apple video (.mov)
+      - video/quicktime # Apple video (.mov)

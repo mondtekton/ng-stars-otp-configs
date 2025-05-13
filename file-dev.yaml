@@ -13,8 +13,8 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
   servlet:
     multipart:
-      max-file-size: 50MB
-      max-request-size: 50MB
+      max-file-size: 100MB
+      max-request-size: 100MB
 
 app:
   file:
@@ -26,4 +26,4 @@ app:
       - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
       - video/mp4
       - video/x-msvideo # Microsoft video (.avi)
-      - video/x-quicktime # Apple video (.mov)
+      - video/quicktime # Apple video (.mov)
