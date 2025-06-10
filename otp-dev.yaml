@@ -23,6 +23,13 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
 
+# ============== Metrics Exposition ====================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["prometheus"]
+
 # ============== OTP configurations ====================
 otp:
   length: 6

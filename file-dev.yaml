@@ -25,7 +25,6 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
 
-
 app:
   file:
     storage-root: ${user.home}/FileStorage
@@ -37,3 +36,9 @@ app:
       - video/mp4
       - video/x-msvideo # Microsoft video (.avi)
       - video/quicktime # Apple video (.mov)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["prometheus"]

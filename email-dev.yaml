@@ -11,9 +11,16 @@ spring:
           auth: true
           starttls:
             enable: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["prometheus"]
+
 email:
   sender: katohdavid@gmail.com
-  
+
 # ============== Eureka Discovery configuration ==================== #
 eureka:
   client:
