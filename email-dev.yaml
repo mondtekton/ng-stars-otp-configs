@@ -26,9 +26,6 @@ eureka:
   client:
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://${DOCKER_HOST:localhost}:9293/eureka/
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9293/eureka/}
   instance:
-    hostname: localhost
     prefer-ip-address: true
-
-env: Dev Environment. All configuration here are meant for development.
