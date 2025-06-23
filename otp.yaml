@@ -1,7 +1,7 @@
 # ============== Application configuration ==================== #
 spring:
   datasource: # Database configuration #
-    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/otp_db?useSSL=false&serverTimezone=UTC}
+    url: jdbc:mysql://${DATABASE_HOST:localhost}:3306/otp_db?useSSL=false&serverTimezone=UTC
     username: root
     password: 38NG/db@tro38
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,8 +17,9 @@ spring:
 eureka:
   client:
     fetch-registry: true
+    register-with-eureka: true
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9293}/eureka/
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9293/eureka}
   instance:
     prefer-ip-address: true
 

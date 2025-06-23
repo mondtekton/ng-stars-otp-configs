@@ -24,8 +24,9 @@ email:
 # ============== Eureka Discovery configuration ==================== #
 eureka:
   client:
+    register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9293}/eureka/
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:9293/eureka}
   instance:
     prefer-ip-address: true
