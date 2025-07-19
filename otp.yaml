@@ -2,8 +2,8 @@
 spring:
   datasource: # Database configuration #
     url: jdbc:mysql://${DATABASE_HOST:localhost}:3306/otp_db?useSSL=false&serverTimezone=UTC
-    username: root
-    password: 38NG/db@tro38
+    username: ${MYSQL_ROOT_USER}
+    password:  ${MYSQL_ROOT_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
